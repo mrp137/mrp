@@ -1,0 +1,21 @@
+         
+           <!-- INHERITANCE -->
+
+<!-- single level inheritance -->
+<script>
+    class a{
+        myfunc1(){
+            console.log("class a")
+        }
+    }
+    class b extends a{      // a is parent of b  (extend keyword)
+        myfunc2(){
+            console.log(" class b")
+        }
+    }
+   var record=new b;
+   console.log(record);
+   record.myfunc1();
+   record.myfunc2();
+
+</script>

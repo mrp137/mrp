@@ -1,0 +1,21 @@
+<script>
+    class a{
+        myfunc1(){
+            console.log("class a")
+        }
+    }
+    class b extends a{      // a is parent of b  (extend keyword)
+        myfunc2(){
+            console.log(" class b")
+        }
+        myfunc1(){
+            super.myfunc1();        //to access mbr from parent class(super keyword)
+            console.log(" class b my func1")  //function override(parent class a override by child class b)
+        }
+    }
+   var record=new b;
+   console.log(record);
+   record.myfunc1();
+   record.myfunc2();
+
+</script>
